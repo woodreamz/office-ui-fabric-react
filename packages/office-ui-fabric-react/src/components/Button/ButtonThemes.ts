@@ -1,6 +1,5 @@
 import { IButtonStyles } from './Button.types';
 import { ITheme, HighContrastSelector } from '../../Styling';
-import { IsFocusVisibleClassName } from '../../Utilities';
 
 export function standardStyles(theme: ITheme): IButtonStyles {
   const s = theme.semanticColors;
@@ -71,10 +70,6 @@ export function standardStyles(theme: ITheme): IButtonStyles {
               color: 'Highlight'
             }
           }
-        },
-        [HighContrastSelector]: {
-          border: `1px solid white`,
-          borderLeft: 'none'
         }
       }
     },
